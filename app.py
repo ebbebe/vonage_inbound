@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    print("사이트 호출됨")
     return 'Hello from Koyeb'
 
 @app.route('/webhooks/inbound-sms', methods=['GET', 'POST'])
